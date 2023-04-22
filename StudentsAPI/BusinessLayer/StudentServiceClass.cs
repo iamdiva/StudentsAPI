@@ -20,9 +20,9 @@ namespace StudentsAPI.BisinessLayer
             studentModel.Hobbies = new string[] { "painting", "dancing", "singing" };
             data.Add(studentModel);
 
-            StudentReponse studentReponse = new StudentReponse();
-            studentReponse.Students = data;
-            string jsonOutput = JsonConvert.SerializeObject(studentReponse);
+            //StudentReponse studentReponse = new StudentReponse();
+            //studentReponse.Students = data;
+            string jsonOutput = JsonConvert.SerializeObject(data);
 
             return jsonOutput;
             
